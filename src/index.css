@@ -1,0 +1,64 @@
+/* Comfortaa font import */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+.text-pink {
+  color: #ffb6c1 !important;
+}
+.btn-outline-light:hover {
+  background-color: #ffb6c1;
+  color: black !important;
+}
+
+.bg-pink {
+  background-color: #ff6b9d;
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* Contact method cards hover effect */
+.contact-method .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Social media buttons hover effect */
+.btn-outline-light.rounded-circle:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Ensure text links are visible on hover */
+a.text-light:hover {
+  color: #ff6b9d !important;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: translateY(-5px);
+}
+
+/* Pink accent color */
+.bg-pink {
+  background-color: #ff6b9d;
+}
+.text-pink {
+  color: #ff6b9d;
+}
+
