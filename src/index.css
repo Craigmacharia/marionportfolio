@@ -1,64 +1,89 @@
-/* Comfortaa font import */
+/* Comfortaa font import - moved to top */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-.text-pink {
-  color: #ffb6c1 !important;
+
+/* Color Variables */
+:root {
+  --pink-light: #ffb6c1;
+  --pink: #ff6b9d;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-hover: 0 10px 20px rgba(0,0,0,0.2);
 }
-.btn-outline-light:hover {
-  background-color: #ffb6c1;
-  color: black !important;
+
+/* Base Styles */
+.text-pink {
+  color: var(--pink) !important;
 }
 
 .bg-pink {
-  background-color: #ff6b9d;
+  background-color: var(--pink);
 }
 
-.project-card:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-
-
-/* Contact method cards hover effect */
+/* Mobile-first Contact Cards */
 .contact-method .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem; /* Add spacing between stacked cards on mobile */
 }
 
-.contact-method .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+/* Hover effects (only on devices that support hover) */
+@media (hover: hover) {
+  .btn-outline-light:hover {
+    background-color: var(--pink-light);
+    color: black !important;
+  }
+
+  .project-card:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  .contact-method .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .btn-outline-light.rounded-circle:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  a.text-light:hover {
+    color: var(--pink) !important;
+    text-decoration: none;
+  }
+
+  .hover-scale:hover {
+    transform: translateY(-5px);
+  }
 }
 
-/* Social media buttons hover effect */
-.btn-outline-light.rounded-circle:hover {
-  background-color: rgba(255,255,255,0.1);
+/* Shared Transition Effects */
+.hover-scale,
+.contact-method .card,
+.btn-outline-light {
+  transition: all 0.3s ease;
 }
 
-/* Ensure text links are visible on hover */
-a.text-light:hover {
-  color: #ff6b9d !important;
-  text-decoration: none;
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .contact-method .card {
+    margin-bottom: 0; /* Remove bottom margin when cards are side-by-side */
+  }
 }
 
-
-
-
-
-
-
-
-/* Hover effects */
-.hover-scale {
-  transition: transform 0.3s ease;
-}
-.hover-scale:hover {
-  transform: translateY(-5px);
+/* Optimized Touch Targets for Mobile */
+a, button {
+  min-height: 48px; /* Recommended touch target size */
+  min-width: 48px;
 }
 
-/* Pink accent color */
-.bg-pink {
-  background-color: #ff6b9d;
-}
-.text-pink {
-  color: #ff6b9d;
+/* Social Media Buttons */
+.btn-outline-light.rounded-circle {
+  padding: 0.75rem; /* Larger touch area */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Performance Optimizations */
+* {
+  will-change: transform, box-shadow; /* Hint browser for smoother animations */
+  backface-visibility: hidden; /* Improve animation performance */
+}

@@ -14,7 +14,7 @@ const projectsData = [
     category: "web",
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     githubLink: "#",
-    liveDemo: "#"
+    liveDemo: "https://marionsportfolio.netlify.app/"
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const projectsData = [
     category: "web",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     githubLink: "#",
-    liveDemo: "#"
+    liveDemo: "https://schoolsiteme.netlify.app/"
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projectsData = [
     category: "mobile",
     image: "https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     githubLink: "#",
-    liveDemo: "#"
+    liveDemo: "https://craigportfolio2.netlify.app/"
   }
 ];
 
