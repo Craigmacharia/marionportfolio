@@ -1,4 +1,4 @@
-import heroImg from '../assets/pj2.png';
+import heroImg from '../assets/gathoni0.png';
 import { useEffect } from 'react';
 import { ArrowDownCircle, Github, Linkedin, FileEarmarkPerson } from 'react-bootstrap-icons';
 

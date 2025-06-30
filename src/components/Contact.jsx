@@ -32,18 +32,18 @@ const Contact = () => {
             <ChatRightTextFill size={28} className="me-2 text-pink" />
             Get In Touch
           </h2>
-          <p className="lead contact-subtitle mx-auto" style={{ maxWidth: '600px', opacity: 0 }}>
+          <p className="lead contact-subtitle mx-auto" style={{ maxWidth: '600px', opacity: 0, fontFamily: '"Comfortaa", cursive' }}>
             I'm open to opportunities, collaborations, or just a friendly chat about tech!
           </p>
         </div>
 
         <div className="row g-4 justify-content-center">
           <div className="col-md-4 contact-method" style={{ opacity: 0 }}>
-            <div className="card h-100 bg-secondary border-0">
+            <div className="card h-100 bg-white border-0">
               <div className="card-body p-4 text-center">
-                <EnvelopeFill size={48} className="mb-3 text-pink" />
-                <h4>Email</h4>
-                <a href="mailto:your.email@example.com" className="text-light d-block mt-2">
+                <e size={48} className="mb-3 text-pink" />
+                <h4 style={{ fontFamily: '"Comfortaa", cursive' }}>Email</h4>
+                <a href="mailto:your.email@example.com" className="text-pink d-block mt-2" style={{ fontFamily: '"Comfortaa", cursive' }}>
                   your.email@example.com
                 </a>
               </div>
@@ -51,11 +51,11 @@ const Contact = () => {
           </div>
 
           <div className="col-md-4 contact-method" style={{ opacity: 0 }}>
-            <div className="card h-100 bg-secondary border-0">
+            <div className="card h-100 bg-white border-0">
               <div className="card-body p-4 text-center">
-                <Whatsapp size={48} className="mb-3 text-pink" />
-                <h4>WhatsApp</h4>
-                <a href="https://wa.me/yourphonenumber" className="text-light d-block mt-2">
+                <w size={48} className="mb-3 text-pink" />
+                <h4 style={{ fontFamily: '"Comfortaa", cursive' }}>WhatsApp</h4>
+                <a href="https://wa.me/yourphonenumber" className="text-pink d-block mt-2" style={{ fontFamily: '"Comfortaa", cursive' }}>
                   +254 7XX XXX XXX
                 </a>
               </div>
@@ -63,11 +63,11 @@ const Contact = () => {
           </div>
 
           <div className="col-md-4 contact-method" style={{ opacity: 0 }}>
-            <div className="card h-100 bg-secondary border-0">
+            <div className="card h-100 bg-white border-0">
               <div className="card-body p-4 text-center">
-                <TelephoneFill size={48} className="mb-3 text-pink" />
-                <h4>Call/SMS</h4>
-                <a href="tel:+2547XXXXXXXX" className="text-light d-block mt-2">
+                <t size={48} className="mb-3 text-pink" />
+                <h4 style={{ fontFamily: '"Comfortaa", cursive' }}>Call/SMS</h4>
+                <a href="tel:+2547XXXXXXXX" className="text-pink d-block mt-2" style={{ fontFamily: '"Comfortaa", cursive' }}>
                   +254 7XX XXX XXX
                 </a>
               </div>
@@ -76,7 +76,7 @@ const Contact = () => {
         </div>
 
         <div className="text-center mt-5">
-          <h4 className="mb-3">Or connect with me on social media</h4>
+          <h4 className="mb-3" style={{ fontFamily: '"Comfortaa", cursive' }}>Or connect with me on social media</h4>
           <div className="d-flex justify-content-center gap-3 mb-4">
             <a 
               href="https://linkedin.com/in/yourprofile" 

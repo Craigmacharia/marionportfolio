@@ -22,7 +22,7 @@ const Projects = () => {
       description: "A responsive personal portfolio built with React and Bootstrap",
       tags: ["React", "Bootstrap", "CSS"],
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      link: "/projects/portfolio",
+      link: "https://marionsportfolio.netlify.app/",
       github: "#"
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       description: "School project creating an admin dashboard for online stores",
       tags: ["JavaScript", "HTML", "CSS"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      link: "/projects/dashboard",
+      link: "https://landingpageboard.netlify.app/",
       github: "#"
     },
     {
@@ -40,7 +40,7 @@ const Projects = () => {
       description: "Simple weather application using API integration",
       tags: ["API", "JavaScript", "CSS"],
       image: "https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      link: "/projects/weather-app",
+      link: "https://schoolsiteme.netlify.app/",
       github: "#"
     }
   ];
@@ -68,19 +68,21 @@ const Projects = () => {
                   alt={project.title} 
                   style={{ height: '200px', objectFit: 'cover' }}
                 />
-                <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description}</p>
+                <div className="card-body" style={{ backgroundColor: "white" }}>
+
+                  <h5 className="card-title" style={{ fontFamily: '"Comfortaa", cursive' }}>{project.title}</h5>
+                  <p className="card-text" style={{ fontFamily: '"Comfortaa", cursive' }}>{project.description}</p>
                   <div className="mb-3">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="badge bg-pink me-1">{tag}</span>
+                      <span key={i} className="badge bg-salmonpink me-1" style={{ fontFamily: '"Comfortaa", cursive' }}>{tag}</span>
                     ))}
                   </div>
                 </div>
-                <div className="card-footer bg-transparent border-top-0 d-flex justify-content-between">
+                <div className="card-footer bg-white border-top-0 d-flex justify-content-between">
                   <Link 
                     to={project.link} 
-                    className="btn btn-sm btn-outline-light"
+                    className="btn btn-sm bg-salmonpink btn-outline-dark"
+                    style={{ fontFamily: '"Comfortaa", cursive' }}
                   >
                     View Details
                   </Link>
@@ -88,7 +90,8 @@ const Projects = () => {
                     href={project.github} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-outline-light"
+                    className="btn btn-sm bg-salmonpink btn-outline-dark"
+                    style={{ fontFamily: '"Comfortaa", cursive' }}
                   >
                     <Github size={16} className="me-1" /> Code
                   </a>

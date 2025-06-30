@@ -53,12 +53,12 @@ const Footer = () => {
           </div>
           
           <div className="text-center">
-            <small className="d-block mb-2">
+            <small className="d-block mb-2" style={{ fontFamily: '"Comfortaa", cursive' }}>
               © {new Date().getFullYear()} Wambui Marion | All Rights Reserved
-              <p>Designed with React❤️ by Craig</p>
+              <p style={{ fontFamily: '"Comfortaa", cursive' }}>Designed with React & ❤️ by Craig</p>
             </small>
-            <small className="text-muted">
-              <p>Built with React & Bootstrap | Designed with</p>
+            <small className="text-muted" style={{ fontFamily: '"Comfortaa", cursive' }}>
+              <p>Built with React & Bootstrap | Designed with Care</p>
             </small>
           </div>
         </div>
@@ -67,4 +67,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;  
+export default Footer;

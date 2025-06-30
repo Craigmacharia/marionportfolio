@@ -87,3 +87,14 @@ a, button {
   will-change: transform, box-shadow; /* Hint browser for smoother animations */
   backface-visibility: hidden; /* Improve animation performance */
 }
+
+.bg-wheat {
+  background-color: wheat !important;
+}
+
+
+.bg-salmonpink {
+  background-color: #ffb6c1 !important;
+  color: black !important;
+}
+

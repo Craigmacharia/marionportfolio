@@ -30,7 +30,11 @@ const About = () => {
             <PersonBadge size={28} className="me-2 text-pink" />
             About Me
           </h2>
-          <p className="lead about-text mx-auto" style={{ maxWidth: '800px', opacity: 0 }}>
+          <p className="lead about-text mx-auto" style={{ 
+            maxWidth: '800px', 
+            opacity: 0,
+            fontFamily: '"Comfortaa", cursive' 
+          }}>
             I'm currently pursuing a Certificate in Information Technology with a passion for 
             technology, continuous learning, and hands-on experience in solving real-world problems.
           </p>
@@ -38,11 +42,11 @@ const About = () => {
 
         <div className="row g-4">
           <div className="col-md-4 about-feature" style={{ opacity: 0 }}>
-            <div className="card h-100 bg-secondary border-0">
+            <div className="card h-100 bg-white border-0">
               <div className="card-body p-4 text-center">
                 <Book size={48} className="mb-3 text-pink" />
-                <h4 className="mb-3">Education</h4>
-                <p>
+                <h4 className="mb-3" style={{ fontFamily: '"Comfortaa", cursive' }}>Education</h4>
+                <p style={{ fontFamily: '"Comfortaa", cursive' }}>
                   Currently enrolled in IT certification program with focus on 
                   software development and system administration.
                 </p>
@@ -51,11 +55,11 @@ const About = () => {
           </div>
 
           <div className="col-md-4 about-feature" style={{ opacity: 0 }}>
-            <div className="card h-100 bg-secondary border-0">
+            <div className="card h-100 bg-grey border-0">
               <div className="card-body p-4 text-center">
                 <Laptop size={48} className="mb-3 text-pink" />
-                <h4 className="mb-3">Skills</h4>
-                <p>
+                <h4 className="mb-3" style={{ fontFamily: '"Comfortaa", cursive' }}>Skills</h4>
+                <p style={{ fontFamily: '"Comfortaa", cursive' }}>
                   Developing expertise in programming, networking, and IT fundamentals.
                   Quick learner with strong problem-solving abilities.
                 </p>
@@ -64,11 +68,11 @@ const About = () => {
           </div>
 
           <div className="col-md-4 about-feature" style={{ opacity: 0 }}>
-            <div className="card h-100 bg-secondary border-0">
+            <div className="card h-100 bg-white border-0">
               <div className="card-body p-4 text-center">
                 <Lightbulb size={48} className="mb-3 text-pink" />
-                <h4 className="mb-3">Passion</h4>
-                <p>
+                <h4 className="mb-3" style={{ fontFamily: '"Comfortaa", cursive' }}>Passion</h4>
+                <p style={{ fontFamily: '"Comfortaa", cursive' }}>
                   Enthusiastic about technology's potential to transform lives and 
                   create innovative solutions for everyday challenges.
                 </p>
@@ -81,7 +85,10 @@ const About = () => {
           <a 
             href="/about" 
             className="btn btn-outline-light btn-lg px-4 rounded-pill about-button" 
-            style={{ opacity: 0, fontFamily: '"Comfortaa", cursive' }}
+            style={{ 
+              opacity: 0, 
+              fontFamily: '"Comfortaa", cursive' 
+            }}
           >
             View Full Profile <ArrowRight className="ms-2" />
           </a>
@@ -91,5 +98,4 @@ const About = () => {
   );
 };
 
-export default About;
-  
+export default About;  
