@@ -28,9 +28,10 @@ const Hero = () => {
       }}
     >
       <div className="container">
-        <h1 className="display-3 fw-bold hero-title mb-4" style={{ opacity: 0 }}>
-          Hi, I'm Marion <span className="text-warning"></span>
-        </h1>
+  <h1 className="display-3 fw-bold hero-title mb-4" style={{ opacity: 0 }}>
+    Hi, I'm <span style={{ color: '#ffb6c1' }}>Marion</span>
+  </h1>
+
         <p className="lead hero-subtitle mb-4" style={{ opacity: 0 }}>
           Aspiring IT Expert & Digital Creator
         </p>
