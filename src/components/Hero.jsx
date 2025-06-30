@@ -45,26 +45,8 @@ const Hero = () => {
             <FileEarmarkPerson className="me-2" />
             View More
           </a>
-          <a 
-            href="https://github.com/yourusername" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="btn btn-outline-light btn-lg px-4 rounded-pill hero-button" 
-            style={{ opacity: 0 }}
-          >
-            <Github className="me-2" />
-            GitHub
-          </a>
-          <a 
-            href="https://linkedin.com/in/yourusername" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="btn btn-outline-light btn-lg px-4 rounded-pill hero-button ms-2" 
-            style={{ opacity: 0 }}
-          >
-            <Linkedin className="me-2" />
-            LinkedIn
-          </a>
+          
+          
         </div>
       </div>
 
